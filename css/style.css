@@ -1,0 +1,344 @@
+@font-face {
+    font-family: Antreas;
+    src: url("../Antreas.ttf");
+}
+
+body {
+    font-size: 15px;
+    color: #000000;
+    margin: 0;
+    background-image: url("../images/WoodBackgroud.avif");
+    font-family: Antreas;
+
+}
+
+header {
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    background-image: url("../images/WoodBackgroud.avif");
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+#flip {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#fireball {
+    border: 1px solid #FAF9DE;
+    background-image: url("../images/PaperBackground.webp");
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #FAF9DE ;
+}
+
+#blackjack {
+    border: 1px solid #FAF9DE ;
+    background-image: url("../images/PaperBackground.webp");
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #FAF9DE ;
+}
+
+#memorygame {
+    border: 1px solid #FAF9DE ;
+    background-image: url("../images/PaperBackground.webp");
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #FAF9DE ;
+}
+
+.organization {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.gameHome {
+    width: 25%;
+    border: 4px solid #414136;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 10px;
+    font-size: 17px;
+    background-image: url("../images/PaperBackground.webp");
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    border: 4px solid black;
+}
+
+footer {
+    color: white;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#charge {
+    height: auto;
+}
+
+#fireball {
+    height: auto;
+}
+
+#shield {
+    height: auto;
+}
+
+.board {
+    display: inline;
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+
+#chargeBoard {
+    border: 3px solid #b4b39d ;
+    background-color: #FAF9DE;
+    position: absolute;
+    bottom: 17%;
+    right: 46.1%;
+}
+
+#fireballBoard {
+    border: 3px solid #b4b39d ;
+    background-color: #FAF9DE;
+    position: absolute;
+    bottom: 17%;
+    right: 46.1%;
+}
+
+#shieldBoard {
+    border: 3px solid #b4b39d ;
+    background-color: #FAF9DE;
+    position: absolute;
+    bottom: 17%;
+    right: 46.1%;
+}
+
+#CPUCharge {
+    border: 3px solid #b4b39d ;
+    background-color: #FAF9DE;
+    position: absolute;
+    bottom: 50%;
+    right: 46.1%;
+}
+
+#CPUFireball {
+    border: 3px solid #b4b39d ;
+    background-color: #FAF9DE;
+    position: absolute;
+    bottom: 50%;
+    right: 46.1%;
+}
+
+#CPUShield {
+    border: 3px solid #b4b39d ;
+    background-color: #FAF9DE;
+    position: absolute;
+    bottom: 50%;
+    right: 46.1%;
+}
+
+#errorText {
+    font-size: 40px;
+    background-color: #ff2727;
+    position: absolute;
+    bottom: 20%;
+    right: 44.5%;
+}
+
+#restart {
+    border: 3px solid #b4b39d;
+    background-color: #FAF9DE;
+}
+
+.game {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+#winningBanner {
+    position: absolute;
+    text-align: center;
+    background-color: #8e7217;
+    font-size: 100px;
+    bottom: 33%;
+    right: 38%;
+}
+
+#losingBanner {
+    position: absolute;
+    text-align: center;
+    background-color: #ff2727;
+    font-size: 100px;
+    bottom: 33%;
+    right: 38%;
+}
+
+button {
+    color: #000000;
+    background-color: #FAF9DE;
+    border: 3px solid #b4b39d ;
+    font-family: Antreas;
+    font-size: 30px;
+}
+
+#restart {
+    border: 3px solid #b4b39d;
+    background-color: #FAF9DE;
+}
+
+#stop {
+    border: 3px solid #b4b39d;
+    background-color: #FAF9DE;
+}
+
+#draw {
+    height: auto;
+}
+
+#cardContainer {
+    display: flex;
+    justify-content: flex-start; /* Align cards from left to right */
+    margin-top: 20px;
+}
+
+#CPUCardContainer {
+    display: flex;
+    justify-content: flex-start; /* Align cards from left to right */
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 139px;
+    border: 1px solid black;
+    margin-right: 5px; /* Adjust spacing between cards */
+    background-size: cover;
+}
+
+#bustBanner {
+    font-size: 100px;
+    background-color: #ff2727;
+    position: absolute;
+    bottom: 50%;
+    right: 41.5%;
+}
+
+#winBanner {
+    font-size: 100px;
+    background-color: #8e7217;
+    position: absolute;
+    bottom: 20%;
+    right: 38%;
+}
+
+#loseBanner {
+    font-size: 100px;
+    background-color: #ff2727;
+    position: absolute;
+    bottom: 20%;
+    right: 38%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #ffffff;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
