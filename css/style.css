@@ -1,17 +1,19 @@
+/* Define custom font */
 @font-face {
     font-family: Antreas;
     src: url("../Antreas.ttf");
 }
 
+/* Global styles */
 body {
     font-size: 15px;
     color: #000000;
     margin: 0;
     background-image: url("../images/WoodBackgroud.avif");
     font-family: Antreas;
-
 }
 
+/* Header styles */
 header {
     font-family: Copperplate, Copperplate Gothic Light, fantasy;
     background-image: url("../images/WoodBackgroud.avif");
@@ -21,7 +23,6 @@ header {
     text-align: center;
     margin: 0 auto;
 }
-
 
 .center {
     display: block;
@@ -291,8 +292,8 @@ button {
     display: none;
 }
 
-
-.memory-game {
+/* Memory Game styles */
+.memoryGame {
     width: 640px;
     height: 640px;
     margin: auto;
@@ -301,7 +302,7 @@ button {
     perspective: 1000px;
 }
 
-.memory-card {
+.memoryCard {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
     margin: 5px;
@@ -312,17 +313,17 @@ button {
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
-.memory-card:active {
+.memoryCard:active {
     transform: scale(0.97);
     transition: transform .2s;
 }
 
-.memory-card.flip {
+.memoryCard.flip {
     transform: rotateY(180deg);
 }
 
-.front-face,
-.back-face {
+.frontFace,
+.backFace {
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -332,7 +333,7 @@ button {
     backface-visibility: hidden;
 }
 
-.front-face {
+.frontFace {
     transform: rotateY(180deg);
 }
   
@@ -341,4 +342,11 @@ button {
     margin: 0;
     box-sizing: border-box;
 }
-  
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+    .memoryCard {
+        width: calc(50% - 10px);
+        height: calc(50% - 10px);
+    }
+}
