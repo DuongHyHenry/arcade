@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="css/style.css"> <!--My CSS file-->
+    </head>
+    <header>
+        <a href="webpage.html"><h1>Blackjack</h1></a>
+    </header>
+    <br>
+    <br>
+
+    <body>
+        <div class="game">
+            <div id="CPUCardContainer">
+            </div>
+        </div>
+        <div class="game">
+            <button id="draw">
+                <img src="images/CardBack.jpg" alt="Back of Card" width=200px height=278px border="0">
+            </button>
+        </div>
+        <div class="game">
+            <div id="cardContainer">
+            </div>
+        </div>
+        <div class="game">
+            <button id="stop">Stop Drawing</button>
+        </div>
+        <br>
+        <div class="game">
+            <button id="restart">Restart</button>
+        </div>
+        <br>
+        <div id="bustBanner" class="hidden">
+            BUST!
+        </div>
+        <div id="winBanner" class="hidden">
+            You Win!
+        </div>
+        <div id="loseBanner" class="hidden">
+            You Lose!
+        </div>
+    </body>
+    <script src="scripts/blackjack.js"></script>
+</html>
